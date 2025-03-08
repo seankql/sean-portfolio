@@ -1,0 +1,14 @@
+.home {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .home h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .home p {
+    margin-top: 0.5rem;
+    color: #4a5568;
+  }

@@ -1,0 +1,14 @@
+.about {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .about p {
+    margin-top: 0.5rem;
+    color: #4a5568;
+  }
