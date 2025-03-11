@@ -34,10 +34,10 @@ function AboutMe() {
                 </div>
                 <div>
                     <a href="https://www.linkedin.com/in/sean-lau-445239226/" target="_blank" rel="noopener noreferrer">
-                        <LinkedinIcon className="icon" />
+                        <LinkedinIcon className="icon-right" />
                     </a>
                     <a href="https://github.com/seankql" target="_blank" rel="noopener noreferrer">
-                        <GithubIcon className="icon" />
+                        <GithubIcon className="icon-right" />
                     </a>
                 </div>
             </div>
