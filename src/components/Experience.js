@@ -53,7 +53,7 @@ const Experience = () => {
                     <span className="skill-bubble">Power BI</span>
                     <span className="skill-bubble">Power Automate</span>
                     <span className="skill-bubble">SharePoint</span>
-                    <span className="skill-bubble">VBA</span>
+                    <span className="skill-bubble">Excel VBA</span>
                 </div>
             </div>
         </section>
