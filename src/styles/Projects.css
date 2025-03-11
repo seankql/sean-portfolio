@@ -1,0 +1,14 @@
+#projects {
+    padding: 100px 20px;
+    background-color: #e9ecef;
+  }
+  
+  #projects h2 {
+    margin-bottom: 1rem;
+  }
+  
+  #projects p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
