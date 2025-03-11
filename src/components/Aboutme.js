@@ -32,14 +32,15 @@ function AboutMe() {
                         <span className="email-text">verylausean@gmail.com</span>
                     </div>
                 </div>
-                <div>
-                    <a href="https://www.linkedin.com/in/sean-lau-445239226/" target="_blank" rel="noopener noreferrer">
-                        <LinkedinIcon className="icon-right" />
-                    </a>
-                    <a href="https://github.com/seankql" target="_blank" rel="noopener noreferrer">
-                        <GithubIcon className="icon-right" />
-                    </a>
-                </div>
+            </div>
+
+            <div className="fixed-icons">
+                <a href="https://www.linkedin.com/in/sean-lau-445239226/" target="_blank" rel="noopener noreferrer">
+                    <LinkedinIcon className="icon-fixed" />
+                </a>
+                <a href="https://github.com/seankql" target="_blank" rel="noopener noreferrer">
+                    <GithubIcon className="icon-fixed" />
+                </a>
             </div>
         </section>
     );
