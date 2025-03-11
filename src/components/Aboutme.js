@@ -24,7 +24,7 @@ function AboutMe() {
             <div className="about-me-box">
                 <div>
                     <h1>Sean Lau</h1>
-                    <h4>Software Engineer</h4>
+                    <h4>Software Engineer @ Toronto, CA</h4>
                 </div>
                 <div>
                     <div className="email-box">

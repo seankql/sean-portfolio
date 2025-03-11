@@ -36,3 +36,18 @@
 .project-box:hover .project-image {
     transform: scale(1.1);
 }
+
+.skills {
+    margin-top: 20px;
+}
+
+.skill-bubble {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    background-color: transparent;
+    border-radius: 30px;
+    font-size: 0.9em;
+    color: white;
+    border: 1px solid rgba(221, 221, 221, 0.5);
+}
