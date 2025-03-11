@@ -1,0 +1,37 @@
+.about-me-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    padding: 0px 0px 0px 20px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    padding-right: 20px;
+    fill: white;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.email-box {
+    position: relative;
+    display: inline-block;
+}
+
+.copy-notification {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    opacity: 1;
+}

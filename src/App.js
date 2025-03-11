@@ -16,7 +16,6 @@ function App() {
       <div className="video-background">
         <video src={videoBackground} autoPlay loop muted />
       </div>
-
       <Navbar />
       <AboutMe />
       <Projects />
