@@ -1,12 +1,12 @@
 .about-me-box {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: first baseline;
     background-color: transparent;
     border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     width: 100%;
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 10px 20px;
 }
 
 .icon {
@@ -21,9 +21,19 @@ a {
     text-decoration: none;
 }
 
+.title-box,
+.location-box,
 .email-box {
-    position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.title-text,
+.location-text,
+.email-text {
+    color: white;
 }
 
 .copy-notification {

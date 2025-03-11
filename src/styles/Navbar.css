@@ -1,6 +1,6 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     background: transparent;
     color: white;
@@ -8,15 +8,22 @@
     width: 100%;
     top: 0;
     left: 0;
+    padding: 10px 0px 10px 0px;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
     gap: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
+}
+
+.navbar ul li:last-child {
+    margin-right: 30px;
 }
