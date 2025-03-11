@@ -1,4 +1,4 @@
-const Aboutme = () => {
+const AboutMe = () => {
     return (
       <section id="about-me">
         <h2>About Me</h2>
@@ -7,5 +7,5 @@ const Aboutme = () => {
     );
   };
   
-  export default Aboutme;
+  export default AboutMe;
   
