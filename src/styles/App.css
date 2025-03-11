@@ -1,0 +1,10 @@
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ensures there's space for the navbar when scrolling */
+#root {
+    padding-top: 60px;
+    /* Adjust this based on the navbar height */
+}
