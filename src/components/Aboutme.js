@@ -1,12 +1,12 @@
 import React from "react";
-import "../styles/AboutMe.css";
+import "../styles/Aboutme.css";
 import { ReactComponent as EmailIcon } from "../assets/email-icon.svg";
 import { ReactComponent as LinkedinIcon } from "../assets/linkedin-icon.svg";
 import { ReactComponent as GithubIcon } from "../assets/github-icon.svg";
 import { ReactComponent as LocationIcon } from "../assets/location-icon.svg";
 import { ReactComponent as TitleIcon } from "../assets/job-icon.svg";
 
-function AboutMe() {
+function Aboutme() {
     const handleCopyEmail = () => {
         const email = "verylausean@gmail.com";
         navigator.clipboard.writeText(email).catch((err) => {
@@ -46,4 +46,4 @@ function AboutMe() {
     );
 }
 
-export default AboutMe;
+export default Aboutme;
