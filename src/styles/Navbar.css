@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
     background: #333;
     color: white;
     position: fixed;
@@ -22,7 +21,5 @@
     text-decoration: none;
   }
   
-  .navbar a:hover {
-    text-decoration: underline;
-  }
+
   
