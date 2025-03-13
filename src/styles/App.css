@@ -21,7 +21,7 @@ body {
 }
 
 section {
-    padding: 20px 20px 20px 0px;
+    padding: 20px 0px 20px 0px;
     width: 33.33%;
     margin: 0 auto;
     box-sizing: border-box;
@@ -34,4 +34,36 @@ html {
 
 #root {
     padding-top: 60px;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #root {
+        padding-top: 50px;
+    }
+
+    .video-background video {
+        object-fit: cover;
+    }
+
+    .navbar {
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .navbar ul {
+        gap: 1rem;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
 }

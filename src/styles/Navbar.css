@@ -8,7 +8,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
 }
 
 .navbar ul {
@@ -26,4 +26,14 @@
 
 .navbar ul li:last-child {
     margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        background: black;
+    }
+
+    .navbar a {
+        color: white;
+    }
 }

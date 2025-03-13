@@ -1,10 +1,9 @@
 import React from "react";
 import "../styles/Aboutme.css";
 import { ReactComponent as EmailIcon } from "../assets/email-icon.svg";
-import { ReactComponent as LinkedinIcon } from "../assets/linkedin-icon.svg";
-import { ReactComponent as GithubIcon } from "../assets/github-icon.svg";
 import { ReactComponent as LocationIcon } from "../assets/location-icon.svg";
 import { ReactComponent as TitleIcon } from "../assets/job-icon.svg";
+import Fixedicons from "./Fixedicons";
 
 function Aboutme() {
     const handleCopyEmail = () => {
@@ -18,7 +17,7 @@ function Aboutme() {
         <section id="about-me">
             <div className="about-me-box">
                 <div>
-                    <h1>Sean Lau</h1>
+                    <h1 className="title">Sean Lau</h1>
                     <div className="title-box">
                         <TitleIcon className="icon" />
                         <span className="title-text">Software Engineer</span>
@@ -33,15 +32,7 @@ function Aboutme() {
                     </div>
                 </div>
             </div>
-
-            <div className="fixed-icons">
-                <a href="https://www.linkedin.com/in/sean-lau-445239226/" target="_blank" rel="noopener noreferrer">
-                    <LinkedinIcon className="icon-fixed" />
-                </a>
-                <a href="https://github.com/seankql" target="_blank" rel="noopener noreferrer">
-                    <GithubIcon className="icon-fixed" />
-                </a>
-            </div>
+            <Fixedicons />
         </section>
     );
 }

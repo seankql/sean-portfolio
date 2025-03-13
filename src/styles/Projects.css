@@ -1,4 +1,4 @@
-#projects {
+.projects-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -6,7 +6,7 @@
 }
 
 .title {
-    color: white;
+    color: #FCECC9;
 }
 
 #projects h2 {
@@ -23,9 +23,9 @@
 }
 
 .project-box {
-    background-color: rgba(255, 255, 255, 0.06); 
+    background-color: rgba(255, 255, 255, 0.06);
     border-radius: 6px;
-    border: 1px solid rgba(255, 255, 255, 0.3);  
+    border: 1px solid rgba(255, 255, 255, 0.3);
     text-align: center;
     padding: 10px;
     text-decoration: none;
@@ -46,4 +46,18 @@
 
 .project-box:hover .project-image {
     transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .projects-section {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 150px;
+    }
+
+    .project-box {
+        padding: 10px 5px;
+    }
 }
