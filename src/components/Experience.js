@@ -20,19 +20,6 @@ const Experience = () => {
                         deployment that increased performance by 37%
                     </li>
                 </ul>
-
-                <div className="skills">
-                    <span className="skill-bubble">Java</span>
-                    <span className="skill-bubble">JavaScript</span>
-                    <span className="skill-bubble">HTML</span>
-                    <span className="skill-bubble">CSS</span>
-                    <span className="skill-bubble">SQL</span>
-                    <span className="skill-bubble">Cypress</span>
-                    <span className="skill-bubble">JMeter</span>
-                    <span className="skill-bubble">Git</span>
-                    <span className="skill-bubble">Jira</span>
-                    <span className="skill-bubble">Postman</span>
-                </div>
             </div>
 
             <div className="experience-box">
@@ -47,14 +34,6 @@ const Experience = () => {
                     <li>Provided operational support to the sales team leading to more efficient use of the sales app by the sales team</li>
                     <li>Maintained ERP platform which tracks sales orders, products, suppliers, customers and more</li>
                 </ul>
-
-                <div className="skills">
-                    <span className="skill-bubble">Power Apps</span>
-                    <span className="skill-bubble">Power BI</span>
-                    <span className="skill-bubble">Power Automate</span>
-                    <span className="skill-bubble">SharePoint</span>
-                    <span className="skill-bubble">Excel VBA</span>
-                </div>
             </div>
         </section>
 

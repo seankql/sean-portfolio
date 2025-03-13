@@ -1,6 +1,9 @@
+#experience {
+    color: white;
+}
 .experience-box {
     width: 100%;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.06); 
     padding: 20px 0px 20px 20px;
     margin-bottom: 20px;
     border-radius: 6px;
@@ -35,19 +38,4 @@
     font-size: 1em;
     margin-bottom: 8px;
     color: white;
-}
-
-.skills {
-    margin-top: 20px;
-}
-
-.skill-bubble {
-    display: inline-block;
-    padding: 8px 16px;
-    margin: 5px;
-    background-color: transparent;
-    border-radius: 30px;
-    font-size: 0.9em;
-    color: white;
-    border: 1px solid rgba(221, 221, 221, 0.5);
 }
