@@ -17,7 +17,7 @@ function Aboutme() {
         <section id="about-me">
             <div className="about-me-box">
                 <div>
-                    <h1 className="title">Sean Lau</h1>
+                    <h1 className="title name">Sean Lau</h1>
                     <div className="title-box">
                         <TitleIcon className="icon" />
                         <span className="title-text">Software Engineer</span>
