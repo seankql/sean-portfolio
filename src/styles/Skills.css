@@ -18,7 +18,9 @@
 }
 
 .skill-bubble {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 8px;
     padding: 8px 16px;
     margin: 5px;
     background-color: rgba(255, 255, 255, 0.06);
@@ -29,6 +31,11 @@
     font-weight: bold;
     transition: all 0.3s ease;
 }
+
+.skill-icon {
+    font-size: 1.4em; /* Adjust icon size */
+}
+
 
 .skill-bubble:hover {
     transform: scale(1.3);

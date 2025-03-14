@@ -24,7 +24,7 @@ function Aboutme() {
                     </div>
                     <div className="location-box">
                         <LocationIcon className="icon" />
-                        <span className="location-text">Toronto, CA</span>
+                        <span className="location-text">Toronto, CAN</span>
                     </div>
                     <div className="email-box">
                         <EmailIcon className="icon" onClick={handleCopyEmail} />
