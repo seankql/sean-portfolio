@@ -1,0 +1,26 @@
+canvas {
+    display: block;
+    background-color: black;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#space-invaders {
+    z-index: 1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+@media (max-width: 768px) {
+    canvas {
+        display: none;
+    }
+}
+
