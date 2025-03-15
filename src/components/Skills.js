@@ -24,7 +24,7 @@ const skills = [
     { name: "Neo4j", icon: "devicon-neo4j-plain colored" },
     { name: "Firebase Database", icon: "devicon-firebase-plain colored" },
     { name: "SharePoint", icon: "devicon-azure-plain colored" },
-    { name: "SharePoint", icon: "devicon-azure-plain colored" },
+    { name: "Power BI", icon: "devicon-azure-plain colored" },
 
     { name: "Power Automate", icon: "devicon-azure-plain colored" },
     { name: "Redis", icon: "devicon-redis-plain colored" },
