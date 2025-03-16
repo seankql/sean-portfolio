@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import bugSvg from "../assets/bug.svg"; 
 
 const SpaceInvaders = () => {
     const canvasRef = useRef(null);
@@ -37,8 +38,7 @@ const SpaceInvaders = () => {
                         x: col * 50 + 20,
                         y: row * 30 + 20,
                         width: 20,
-                        height: 10,
-                        color: "#FCECC9",
+                        height: 20,
                         speedX: enemySpeed
                     });
                 }
@@ -59,6 +59,9 @@ const SpaceInvaders = () => {
         window.addEventListener("keyup", (e) => {
             keys[e.key] = false;
         });
+
+        const bugImage = new Image();
+        bugImage.src = bugSvg;
 
         function update() {
             if (keys["ArrowLeft"] && player.x > 0) player.x -= player.speed;
@@ -95,7 +98,7 @@ const SpaceInvaders = () => {
             });
 
             if (enemies.length === 0) {
-                enemySpeed = Math.min(enemySpeed + 1, 5);
+                enemySpeed = Math.min(enemySpeed + 0.5, 2.5);
                 spawnEnemies();
             }
         }
@@ -111,8 +114,7 @@ const SpaceInvaders = () => {
             });
 
             enemies.forEach(enemy => {
-                ctx.fillStyle = enemy.color;
-                ctx.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
+                ctx.drawImage(bugImage, enemy.x, enemy.y, enemy.width, enemy.height);
             });
         }
 
