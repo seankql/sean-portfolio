@@ -30,6 +30,7 @@ const skills = [
     { name: "Redis", icon: "devicon-redis-plain colored" },
 
     { name: "Cypress", icon: "devicon-cypressio-plain" },
+    { name: "Selenium", icon: "devicon-selenium-original colored" },
     { name: "JMeter", icon: "devicon-feathersjs-original" },
     { name: "TestRail", icon: "fas fa-bug skill-icon" },
     { name: "Sentry", icon: "devicon-sentry-original" },
