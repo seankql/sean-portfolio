@@ -2,6 +2,7 @@ import CaptureText from "../assets/capture-text-project.png";
 import SpendWise from "../assets/spendwise-project.png";
 import TappedIn from "../assets/tappedin-project.png";
 import Portfolio from "../assets/portfolio-project.png";
+import Heatmap from "../assets/heatmap-project.png";
 
 const Projects = () => {
     return (
@@ -18,6 +19,12 @@ const Projects = () => {
                     <h3 className="project-title">TappedIn</h3>
                     <img src={TappedIn} alt="TappedIn" className="project-image" />
                     <p className="project-description">Seamless social media sharing and networking.</p>
+                </a>
+
+                <a href="https://github.com/seankql/google-timeline-heatmap" className="project-box" target="_blank" rel="noopener noreferrer">
+                    <h3 className="project-title">Google Timeline Heatmap</h3>
+                    <img src={Heatmap} alt="Google Timeline Heatmap" className="project-image" />
+                    <p className="project-description">Visualizes personal location data using a heatmap.</p>
                 </a>
 
                 <a href="https://github.com/seankql/capture-text" className="project-box" target="_blank" rel="noopener noreferrer">
