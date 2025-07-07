@@ -3,6 +3,8 @@ import SpendWise from "../assets/spendwise-project.png";
 import TappedIn from "../assets/tappedin-project.png";
 import Portfolio from "../assets/portfolio-project.png";
 import Heatmap from "../assets/heatmap-project.png";
+import Covid from "../assets/covid-project.png";
+import CovidReport from "../assets/covid-19-outcome-prediction-model-report.pdf";
 
 const Projects = () => {
     return (
@@ -19,6 +21,12 @@ const Projects = () => {
                     <h3 className="project-title">TappedIn</h3>
                     <img src={TappedIn} alt="TappedIn" className="project-image" />
                     <p className="project-description">Seamless social media sharing and networking.</p>
+                </a>
+
+                <a href={CovidReport} download className="project-box">
+                    <h3 className="project-title">COVID-19 Outcome Prediction Model</h3>
+                    <img src={Covid} alt="COVID-19 Outcome Prediction Model" className="project-image" />
+                    <p className="project-description">Report for predictive model in R to classify COVID-19 case outcomes.</p>
                 </a>
 
                 <a href="https://github.com/seankql/google-timeline-heatmap" className="project-box" target="_blank" rel="noopener noreferrer">

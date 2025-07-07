@@ -9,7 +9,6 @@ const skills = [
     { name: "TypeScript", icon: "devicon-typescript-plain colored" },
     { name: "SQL", icon: "devicon-azuresqldatabase-plain colored" },
     { name: "R", icon: "devicon-r-plain colored" },
-    { name: "Folium", icon: "fas fa-map-marked-alt skill-icon" },
 
     { name: "HTML", icon: "devicon-html5-plain colored" },
     { name: "CSS", icon: "devicon-css3-plain colored" },
@@ -27,6 +26,8 @@ const skills = [
     { name: "Firebase Database", icon: "devicon-firebase-plain colored" },
     { name: "SharePoint", icon: "devicon-azure-plain colored" },
     { name: "Power BI", icon: "devicon-azure-plain colored" },
+    { name: "Power Apps", icon: "devicon-azure-plain colored" },
+    { name: "Excel (VBA)", icon: "devicon-minitab-plain" },
 
     { name: "Power Automate", icon: "devicon-azure-plain colored" },
     { name: "Redis", icon: "devicon-redis-plain colored" },

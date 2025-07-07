@@ -1,0 +1,40 @@
+#certificates {
+    color: white;
+}
+.certificate-box {
+    background-color: rgba(255, 255, 255, 0.06);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.certificate-box h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: white;
+}
+
+.certificate-box .organization {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: white;
+}
+
+.certificate-box .dates,
+.certificate-box .credential-id {
+    font-size: 1em;
+    color: white;
+}
+
+.certificate-box .description {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.certificate-box .description li {
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: white;
+}

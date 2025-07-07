@@ -4,6 +4,7 @@ import Aboutme from "./components/Aboutme";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";
+import Certificates from "./components/Certificates";
 import SpaceInvaders from "./components/SpaceInvaders";
 
 import "./styles/App.css";
@@ -13,6 +14,7 @@ import "./styles/Projects.css";
 import "./styles/Experience.css";
 import "./styles/Skills.css";
 import "./styles/SpaceInvaders.css";
+import "./styles/Certificates.css";
 
 import videoBackground from "./assets/sean-portfolio-background.mp4"
 
@@ -24,9 +26,10 @@ function App() {
       </div>
       <Navbar />
       <Aboutme />
+      <Experience />
       <Skills />
       <Projects />
-      <Experience />
+      <Certificates />
       <SpaceInvaders />
     </div>
   );
