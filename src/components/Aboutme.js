@@ -20,7 +20,7 @@ function Aboutme() {
                     <h1 className="title name">Sean Lau</h1>
                     <div className="title-box">
                         <TitleIcon className="icon" />
-                        <span className="title-text">Software Engineer</span>
+                        <span className="title-text">Software Engineer, Data/Systems Analyst</span>
                     </div>
                     <div className="location-box">
                         <LocationIcon className="icon" />
