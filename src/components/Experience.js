@@ -19,7 +19,7 @@ const Experience = () => {
             </div>
 
             <div className="experience-box">
-                <h3>System Analyst</h3>
+                <h3>Data Analyst</h3>
                 <p className="company">Toronto Sun Wah Trading Inc.</p>
                 <p className="dates">Jan. 2022 - Dec. 2022</p>
                 <p className="location">Toronto, CAN</p>
