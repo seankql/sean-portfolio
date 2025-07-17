@@ -11,10 +11,16 @@ const Experience = () => {
 
                 <ul className="description">
                     <li>Performed large-scale data migration using SQL, ensuring consistency during transitions between systems</li>
+                    <li>Optimized SQL queries, then validated improvements through API performance testing using JMeter,
+                        resulting in a 37% boost in system performance and a more reliable deployment pipeline
+                    </li>
                     <li>Implemented and updated user-friendly frontend interface using Java, providing seamless access for users to
                         review and merge duplicate orders, mitigating potential errors and ensuring data accuracy</li>
                     <li>Automated frontend testing with Cypress and TestRail, boosting test coverage and release confidence</li>
-                    <li>Conducted thorough performance testing on APIs using JMeter, establishing a solid foundation for secure deployment that increased performance by 37% </li>
+                    <li>Engaged in Agile Scrum practices and used Jira for managing tasks, tracking sprint progress, and facilitating
+                        team communication to ensure smooth project delivery</li>
+                    <li>Resolved data inconsistencies through proactive cross-team communication, preventing delays in clinical
+                        feature rollout</li>
                 </ul>
             </div>
 
@@ -25,14 +31,19 @@ const Experience = () => {
                 <p className="location">Toronto, CAN</p>
 
                 <ul className="description">
-                    <li>Designed and launched a tablet digital ordering app using Power Apps, Power Automate, and SharePoint,
-                        eliminating manual pen-and-paper processes reducing order entry errors by over 30%
+                    <li>Owned the design and deployment of a tablet digital ordering app using Power Apps, Power Automate, and
+                        SharePoint, eliminating manual pen-and-paper processes, reducing order entry errors by over 30%
                     </li>
-                    <li>Created a Power BI dashboard to track error rates and visualize operational improvements post-digitization</li>
-                    <li>Collaborated cross-functionally with sales, warehouse, and procurement teams to gather business requirements,
-                        enforce data quality thresholds, and ensure strong adoption through iterative feedback</li>
-                    <li>Automated order reporting workflows with Excel and VBA, cutting manual processing time by more
-                        than 50% and increasing the reliability of order sheets</li>
+                    <li>Collaborated cross-functionally with sales, warehouse, and procurement teams to gather business requirements, enforce data quality thresholds, and ensure strong adoption through iterative feedback
+                    </li>
+                    <li>Created Power BI dashboards to track error rates and visualize operational improvements post-digitization</li>
+                    <li>Used Power Query and DAX to clean and transform ERP data, producing actionable metrics
+                    </li>
+                    <li>Automated order reporting workflows with Excel and VBA, cutting manual processing time by more than
+                        50% and increasing the reliability of order sheets
+                    </li>
+                    <li>Maintained full documentation of metric definitions and logic, ensuring transparency and data literacy across
+                        the team</li>
                 </ul>
             </div>
 
