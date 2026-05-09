@@ -32,3 +32,18 @@
 .name {
     font-size: 35px;
 }
+.email-box {
+    cursor: pointer;
+}
+
+.copied-tooltip {
+    margin-left: 10px;
+    color: #FCECC9;
+    font-size: 0.8em;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.copied-tooltip.visible {
+    opacity: 1;
+}

@@ -24,24 +24,23 @@ const skills = [
     { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
     { name: "Neo4j", icon: "devicon-neo4j-plain colored" },
     { name: "Firebase Database", icon: "devicon-firebase-plain colored" },
-    { name: "SharePoint", icon: "devicon-azure-plain colored" },
-    { name: "Power BI", icon: "devicon-azure-plain colored" },
-    { name: "Power Apps", icon: "devicon-azure-plain colored" },
-    { name: "Excel (VBA)", icon: "devicon-minitab-plain" },
+    { name: "SharePoint", icon: "fas fa-share-nodes" },
+    { name: "Power BI", icon: "fas fa-chart-bar" },
+    { name: "Power Apps", icon: "fas fa-table-cells" },
+    { name: "Excel (VBA)", icon: "fas fa-file-excel" },
 
-    { name: "Power Automate", icon: "devicon-azure-plain colored" },
+    { name: "Power Automate", icon: "fas fa-arrows-rotate" },
     { name: "Redis", icon: "devicon-redis-plain colored" },
 
     { name: "Cypress", icon: "devicon-cypressio-plain" },
     { name: "Selenium", icon: "devicon-selenium-original colored" },
-    { name: "JMeter", icon: "devicon-feathersjs-original" },
-    { name: "TestRail", icon: "fas fa-bug skill-icon" },
+    { name: "JMeter", icon: "fas fa-gauge-high" },
+    { name: "TestRail", icon: "fas fa-vial" },
     { name: "Sentry", icon: "devicon-sentry-original" },
 
-
     { name: "Docker", icon: "devicon-docker-plain colored" },
-    { name: "Auth0", icon: "fas fa-shield skill-icon" },
-    { name: "SendGrid", icon: "fas fa-paper-plane skill-icon" },
+    { name: "Auth0", icon: "fas fa-shield-halved" },
+    { name: "SendGrid", icon: "fas fa-paper-plane" },
 
     { name: "Git", icon: "devicon-git-plain colored" },
     { name: "Jira", icon: "devicon-jira-plain colored" },

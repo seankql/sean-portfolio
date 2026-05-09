@@ -14,7 +14,6 @@ const SpaceInvaders = () => {
         };
 
         updateCanvasSize();
-        window.addEventListener("resize", updateCanvasSize);
 
         const player = {
             x: canvas.width / 2 - 15,
@@ -29,6 +28,7 @@ const SpaceInvaders = () => {
         let enemies = [];
         const enemyRows = 3, enemyCols = 5;
         let enemySpeed = 1;
+        let score = 0;
 
         const spawnEnemies = () => {
             enemies = [];
@@ -47,21 +47,27 @@ const SpaceInvaders = () => {
 
         spawnEnemies();
 
-        let keys = {};
+        const keys = {};
         let lastShootTime = 0;
         const shootCooldown = 100;
 
-        window.addEventListener("keydown", (e) => {
+        const handleKeyDown = (e) => {
             keys[e.key] = true;
             if (e.key === " ") e.preventDefault();
-        });
+        };
 
-        window.addEventListener("keyup", (e) => {
+        const handleKeyUp = (e) => {
             keys[e.key] = false;
-        });
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+        window.addEventListener("keyup", handleKeyUp);
+        window.addEventListener("resize", updateCanvasSize);
 
         const bugImage = new Image();
         bugImage.src = bugSvg;
+
+        let animationId;
 
         function update() {
             if (keys["ArrowLeft"] && player.x > 0) player.x -= player.speed;
@@ -73,9 +79,9 @@ const SpaceInvaders = () => {
                 keys[" "] = false;
             }
 
-            bullets.forEach((bullet, index) => {
+            bullets = bullets.filter(bullet => {
                 bullet.y -= bullet.speed;
-                if (bullet.y < 0) bullets.splice(index, 1);
+                return bullet.y > 0;
             });
 
             enemies.forEach(enemy => {
@@ -83,18 +89,22 @@ const SpaceInvaders = () => {
                 if (enemy.x + enemy.width > canvas.width || enemy.x < 0) enemy.speedX *= -1;
             });
 
-            bullets.forEach((bullet, bIndex) => {
-                enemies.forEach((enemy, eIndex) => {
+            bullets = bullets.filter(bullet => {
+                let hit = false;
+                enemies = enemies.filter(enemy => {
                     if (
                         bullet.x < enemy.x + enemy.width &&
                         bullet.x + bullet.width > enemy.x &&
                         bullet.y < enemy.y + enemy.height &&
                         bullet.y + bullet.height > enemy.y
                     ) {
-                        enemies.splice(eIndex, 1);
-                        bullets.splice(bIndex, 1);
+                        hit = true;
+                        score++;
+                        return false;
                     }
+                    return true;
                 });
+                return !hit;
             });
 
             if (enemies.length === 0) {
@@ -105,6 +115,11 @@ const SpaceInvaders = () => {
 
         function draw() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#FCECC9";
+            ctx.font = "12px monospace";
+            ctx.fillText(`Score: ${score}`, canvas.width - 70, 16);
+
             ctx.fillStyle = player.color;
             ctx.fillRect(player.x, player.y, player.width, player.height);
 
@@ -121,15 +136,16 @@ const SpaceInvaders = () => {
         function gameLoop() {
             update();
             draw();
-            requestAnimationFrame(gameLoop);
+            animationId = requestAnimationFrame(gameLoop);
         }
 
         gameLoop();
 
         return () => {
+            cancelAnimationFrame(animationId);
             window.removeEventListener("resize", updateCanvasSize);
-            window.removeEventListener("keydown", (e) => (keys[e.key] = true));
-            window.removeEventListener("keyup", (e) => (keys[e.key] = false));
+            window.removeEventListener("keydown", handleKeyDown);
+            window.removeEventListener("keyup", handleKeyUp);
         };
     }, []);
 

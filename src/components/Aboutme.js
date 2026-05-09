@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Aboutme.css";
 import { ReactComponent as EmailIcon } from "../assets/email-icon.svg";
 import { ReactComponent as LocationIcon } from "../assets/location-icon.svg";
@@ -6,9 +6,14 @@ import { ReactComponent as TitleIcon } from "../assets/job-icon.svg";
 import Fixedicons from "./Fixedicons";
 
 function Aboutme() {
+    const [copied, setCopied] = useState(false);
+
     const handleCopyEmail = () => {
         const email = "verylausean@gmail.com";
-        navigator.clipboard.writeText(email).catch((err) => {
+        navigator.clipboard.writeText(email).then(() => {
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
+        }).catch((err) => {
             console.error("Failed to copy email: ", err);
         });
     };
@@ -26,9 +31,10 @@ function Aboutme() {
                         <LocationIcon className="icon" />
                         <span className="location-text">Toronto, CAN</span>
                     </div>
-                    <div className="email-box">
-                        <EmailIcon className="icon" onClick={handleCopyEmail} />
+                    <div className="email-box" onClick={handleCopyEmail}>
+                        <EmailIcon className="icon" />
                         <span className="email-text">verylausean@gmail.com</span>
+                        <span className={`copied-tooltip${copied ? " visible" : ""}`}>Copied!</span>
                     </div>
                 </div>
             </div>
