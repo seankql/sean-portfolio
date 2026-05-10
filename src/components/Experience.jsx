@@ -2,11 +2,21 @@ import React, { useState } from 'react';
 
 const experiences = [
   {
+    role: 'Power BI & Microsoft Fabric Analyst',
+    company: 'Encore Market Engagement',
+    dates: 'Apr. 2026 – Present',
+    location: 'Oakville, CAN',
+    active: true,
+    color: '#f4a261',
+    initials: 'EM',
+    bullets: [],
+  },
+  {
     role: 'Software Engineer',
     company: 'Scotiabank',
-    dates: 'Aug. 2025 – Present',
+    dates: 'Aug. 2025 – Apr. 2026',
     location: 'Toronto, CAN',
-    active: true,
+    active: false,
     color: '#e31837',
     initials: 'SB',
     bullets: [
@@ -22,7 +32,7 @@ const experiences = [
     dates: 'May 2023 – Apr. 2024',
     location: 'Toronto, CAN',
     active: false,
-    color: '#0077b6',
+    color: '#2d6a4f',
     initials: 'PC',
     bullets: [
       'Performed large-scale data migration using SQL, ensuring consistency during transitions between systems',
@@ -36,7 +46,7 @@ const experiences = [
     dates: 'Jan. 2022 – Dec. 2022',
     location: 'Toronto, CAN',
     active: false,
-    color: '#f4a261',
+    color: '#6366f1',
     initials: 'SW',
     bullets: [
       'Owned the design and deployment of a tablet digital ordering app using Power Apps, Power Automate, and SharePoint, eliminating manual pen-and-paper processes, reducing order entry errors by over 30%',
@@ -51,7 +61,7 @@ const experiences = [
     dates: 'Jan. 2018 – Aug. 2019',
     location: 'Singapore',
     active: false,
-    color: '#2d6a4f',
+    color: '#0077b6',
     initials: 'SAF',
     bullets: [
       'Managed a team of 20+ supply assistants, supplied battalion with necessary firearms and equipment, kept stock of storehouse inventory, managed the logistics in operations and exercises',
@@ -74,10 +84,10 @@ const Experience = () => {
             <div key={i} className={`timeline-item ${i % 2 === 0 ? 'tl-left' : 'tl-right'}`}>
               <div className="timeline-dot" style={{ background: exp.color, boxShadow: exp.active ? `0 0 0 4px ${exp.color}33` : 'none' }} />
               <div
-                className={`exp-card${exp.active ? ' exp-active' : ''}`}
-                onClick={() => setOpenIndex(openIndex === i ? -1 : i)}
-                role="button"
-                tabIndex={0}
+                className={`exp-card${exp.active ? ' exp-active' : ''}${exp.bullets.length === 0 ? ' exp-no-bullets' : ''}`}
+                onClick={() => exp.bullets.length > 0 && setOpenIndex(openIndex === i ? -1 : i)}
+                role={exp.bullets.length > 0 ? 'button' : undefined}
+                tabIndex={exp.bullets.length > 0 ? 0 : undefined}
               >
                 <div className="exp-header">
                   <div
@@ -90,20 +100,24 @@ const Experience = () => {
                     <h3 className="exp-role">{exp.role}</h3>
                     <p className="exp-company" style={{ color: exp.color }}>{exp.company}</p>
                   </div>
-                  <span className="exp-chevron">{openIndex === i ? '−' : '+'}</span>
+                  {exp.bullets.length > 0 && (
+                    <span className="exp-chevron">{openIndex === i ? '−' : '+'}</span>
+                  )}
                 </div>
                 <div className="exp-meta">
                   <span>{exp.dates}</span>
                   <span className="exp-dot">·</span>
                   <span>{exp.location}</span>
                 </div>
-                <div className={`exp-bullets${openIndex === i ? ' open' : ''}`}>
-                  <ul>
-                    {exp.bullets.map((b, j) => (
-                      <li key={j}>{b}</li>
-                    ))}
-                  </ul>
-                </div>
+                {exp.bullets.length > 0 && (
+                  <div className={`exp-bullets${openIndex === i ? ' open' : ''}`}>
+                    <ul>
+                      {exp.bullets.map((b, j) => (
+                        <li key={j}>{b}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             </div>
           ))}

@@ -26,9 +26,9 @@
 
 .si-canvas {
   display: block;
-  background: transparent;
-  border: 1px solid rgba(0, 212, 255, 0.1);
-  border-radius: 6px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 212, 255, 0.18);
+  box-shadow: 0 0 24px rgba(0, 212, 255, 0.08), inset 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 960px) {

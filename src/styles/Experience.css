@@ -55,6 +55,10 @@
   user-select: none;
 }
 
+.exp-no-bullets {
+  cursor: default;
+}
+
 .exp-card:hover {
   border-color: var(--border-accent);
   background: var(--bg-card-hover);
