@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../styles/Aboutme.css";
-import { ReactComponent as EmailIcon } from "../assets/email-icon.svg";
-import { ReactComponent as LocationIcon } from "../assets/location-icon.svg";
-import { ReactComponent as TitleIcon } from "../assets/job-icon.svg";
+import EmailIcon from "../assets/email-icon.svg?react";
+import LocationIcon from "../assets/location-icon.svg?react";
+import TitleIcon from "../assets/job-icon.svg?react";
 import Fixedicons from "./Fixedicons";
 
 function Aboutme() {
