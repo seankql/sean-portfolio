@@ -1,39 +1,84 @@
 .navbar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background: transparent;
-    color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 10px 0px 10px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 18px 0;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease, border-bottom 0.3s ease;
 }
 
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
+.navbar.scrolled {
+  background: rgba(10, 15, 30, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 0;
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
+.navbar-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.navbar ul li:last-child {
-    margin-right: 30px;
+.navbar-logo {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  padding: 6px 10px;
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-sm);
+  transition: background 0.2s, box-shadow 0.2s;
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        background: black;
-    }
+.navbar-logo:hover {
+  background: var(--accent-dim);
+  box-shadow: 0 0 12px var(--accent-glow);
+}
 
-    .navbar a {
-        color: white;
-    }
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 4px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+  letter-spacing: 0.01em;
+}
+
+.navbar-links a:hover {
+  color: var(--text-primary);
+  background: var(--border);
+}
+
+.navbar-links a.active {
+  color: var(--accent);
+  background: var(--accent-dim);
+}
+
+@media (max-width: 600px) {
+  .navbar-inner {
+    padding: 0 16px;
+  }
+  .navbar-links a {
+    padding: 5px 8px;
+    font-size: 0.75rem;
+  }
+  .navbar-logo {
+    font-size: 0.85rem;
+  }
 }

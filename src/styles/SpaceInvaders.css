@@ -1,26 +1,38 @@
-canvas {
-    display: block;
-    background-color: black;
-    margin: 0 auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
+.si-wrapper {
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
 }
 
-#space-invaders {
-    z-index: 1;
+.si-play-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  animation: si-blink 1.3s step-end infinite;
+  pointer-events: none;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
+@keyframes si-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
-@media (max-width: 768px) {
-    canvas {
-        display: none;
-    }
+.si-canvas {
+  display: block;
+  background: transparent;
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  border-radius: 6px;
 }
 
+@media (max-width: 960px) {
+  .si-wrapper {
+    display: none;
+  }
+}
